@@ -13,7 +13,7 @@
 body{margin:0;background:#FBF8F2}
 a{color:#A0174F}a:hover{color:#6E0F37}
 p{margin:0}
-.hero{position:relative;min-height:720px;display:flex;align-items:center;background:#F6CCD5 url(/images/peony.jpg) no-repeat 100% 50%;background-size:cover;overflow:hidden}
+.hero{position:relative;height:min(720px,calc(100vh - 24px));min-height:480px;display:flex;align-items:center;background:linear-gradient(to right,#FAD1D9 calc(100% - min(1440px,200vh - 48px)),rgba(250,209,217,0) calc(100% - min(1440px,200vh - 48px) + 260px)),url(/images/peony.jpg) no-repeat 100% 100%/auto 100%,#FAD1D9;overflow:hidden}
 .hero-inner{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);box-sizing:border-box}
 .hero-text{max-width:min(600px,46%);display:flex;flex-direction:column;align-items:flex-start;gap:20px}
 .h-title{font-size:clamp(56px,6.6vw,104px)}
